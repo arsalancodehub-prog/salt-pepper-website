@@ -1,0 +1,224 @@
+:root {
+    --red: #ed1c24;
+    --green: #28a745;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../assests/fonts/inter/Inter.ttf);
+
+}
+
+@font-face {
+    font-family: Futurak;
+    src: url(../assests/fonts/futurak/Futurak.ttf);
+
+}
+
+body {
+    font-family: Inter, sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+/* navbar started */
+.mobile-navbar {
+    display: none;
+}
+
+.nav-items>a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.6rem;
+    margin-right: 2rem;
+}
+
+.franchise-btn {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.order-btn {
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.btn-icon {
+    font-size: 1.5rem;
+}
+
+
+
+.logo-img {
+    width: 156px;
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--black);
+    min-height: 90px;
+
+}
+
+
+
+/* .mobile-img {
+    width: 70px;
+}
+ */
+
+
+/* carousel started */
+
+.carousel-img {
+    width: 100%;
+    display: block;
+}
+
+/* carousel ended */
+
+
+/* wellcome container started  */
+
+.wellcome-heading {
+    font-size: 4rem;
+    text-align: center;
+    margin: 50px 0px 15px;
+}
+
+.futurak-word {
+    font-size: 5.2rem;
+    font-family: Futurak sans-serif;
+}
+
+.wellcome-para {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 20px 0px;
+    color: #ffffffB3;
+    margin: 0;
+    line-height: 1.6;
+
+}
+
+.brand-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 60px 0px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.brand-img {
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.brand-children {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.brand-ord-btn {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 15px 15px;
+}
+
+/* welcome container ended */
+
+ @media (max-width: 425px) {
+
+    .nav-items {
+        display: none;
+    }
+
+    .logo-img {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        padding: 10px 15px;
+    }
+
+    /* Logo exactly in center */
+    #logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #logo img {
+        width: 80px;
+        height: auto;
+        display: block;
+    }
+
+
+    .mobile-icon {
+        color: var(--white);
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .mobile-btn {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .mobile-btn .order-btn {
+        padding: 8px 12px;
+        font-size: 1.2rem;
+        border-radius: 20px;
+    }
+
+    .mobile-btn .btn-icon {
+        font-size: 1.1rem;
+    }
+}
